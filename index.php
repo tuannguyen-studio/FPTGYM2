@@ -520,7 +520,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
                         <div class="w-100 text-center mt-4 text">
                             <p class="mb-0">Bạn chưa có tài khoản?</p>
-                            <a href="#" data-toggle="modal" data-target="#membershipForm">Đăng ký</a>
+                            <a href="#" data-toggle="modal" data-dismiss="modal" aria-label="Close" data-target="#membershipForm">Đăng ký</a>
                         </div>
 
                     </form>
