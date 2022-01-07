@@ -1,17 +1,16 @@
 <?php
 global $conn;
-function connect_db()
-{
+//Hàm kết nối database
+function connect_db(){
     global $conn;
     if (!$conn) {
-        $conn = mysqli_connect('localhost', 'root', '', 'fptgym')
-            or die('Can\'t not connect database');
+        $conn = mysqli_connect('localhost','root','','fptgym')
+            or die('Cannot connect database');
         mysqli_set_charset($conn, 'utf8');
     }
 }
-
-function disconnect_db()
-{
+//Hàm đóng kết nối database
+function disconnect_db(){
     global $conn;
     if ($conn) {
         mysqli_close($conn);
