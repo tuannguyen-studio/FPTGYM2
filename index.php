@@ -1,11 +1,3 @@
-<?php
-session_start();
-$name = '';
-if ($_SESSION['login']) {
-    $name = json_decode($_SESSION['member'])->name;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,12 +59,8 @@ https://www.tooplate.com/view/2119-gymso-fitness
                         <a href="#contact" class="nav-link smoothScroll">Liên hệ</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?= $name != '' ? 'memberprofile.php' : '#' ?>" 
-                        class="nav-link smoothScroll" 
-                        class="btn custom-btn bg-color mt-3" 
-                        <?= $name != '' ? '' : 'data-toggle="modal" data-target="#login"' ?>>
-                        <?= $name != '' ? $name : 'Đăng nhập' ?>
-                        </a>
+                        <a href="#" class="nav-link smoothScroll" class="btn custom-btn bg-color mt-3" 
+                        data-toggle="modal" data-target="#login">Đăng nhập</a>
                     </li>
                 </ul>
 
