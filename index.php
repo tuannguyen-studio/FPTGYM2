@@ -59,8 +59,10 @@ https://www.tooplate.com/view/2119-gymso-fitness
                         <a href="#contact" class="nav-link smoothScroll">Liên hệ</a>
                     </li>
                     <li class="nav-item">
+
                         <a href="#" class="nav-link smoothScroll" class="btn custom-btn bg-color mt-3" 
                         data-toggle="modal" data-target="#login">Đăng nhập</a>
+
                     </li>
                 </ul>
 
@@ -543,6 +545,49 @@ https://www.tooplate.com/view/2119-gymso-fitness
                             <p class="mb-0">Bạn chưa là thành viên?
                             <a href="#" data-toggle="modal" data-dismiss="modal" aria-label="Close" 
                             data-target="#membershipForm"><b> Đăng ký tài khoản </b></a></p>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="modal-footer"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Login -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h2 class="modal-title" id="membershipFormLabel">Đăng nhập</h2>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form class="membership-form webform" role="form">
+
+                        <input type="text" class="form-control" name="cf-username" placeholder="Tên đăng nhập">
+
+                        <input type="password" class="form-control" name="cf-password" placeholder="Mật khẩu">
+
+                        <div class="form-group d-md-flex">
+                            <div class="w-100 text-md-right">
+                                <a href="#">Quên mật khẩu?</a>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="form-control" id="submit-button" name="submit">Đăng nhập</button>
+
+                        <div class="w-100 text-center mt-4 text">
+                            <p class="mb-0">Bạn chưa có tài khoản?</p>
+                            <a href="#" data-toggle="modal" data-dismiss="modal" aria-label="Close" data-target="#membershipForm">Đăng ký</a>
                         </div>
 
                     </form>
